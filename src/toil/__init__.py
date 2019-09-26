@@ -136,7 +136,7 @@ def resolveEntryPoint(entryPoint):
     Returns the path to the given entry point (see setup.py) that *should* work on a worker. The
     return value may be an absolute or a relative path.
     """
-    return "~/vnev/bin/_toil_worker"
+    return "~/venv/bin/_toil_worker"
     if inVirtualEnv():
         path = os.path.join(os.path.dirname(sys.executable), entryPoint)
         # Inside a virtualenv we try to use absolute paths to the entrypoints.
